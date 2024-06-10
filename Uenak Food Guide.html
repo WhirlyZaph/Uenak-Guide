@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="" style="--vh: 7.38px;"><head style=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UENAK Food Guide</title>
+<link rel="stylesheet" href="Uenak Food Guide.css">
+<link rel="stylesheet" href="all.css">
+</head>
+
+<body style="" onmouseup="hide()">
+
+<!-- Start Navbar -->
+<header class="header-wrapper js-navbar" id="navibar" style="top: auto; position:fixed" onmouseover="setNavOpacity(1)" onmouseout="setNavOpacity(0.5)">
+<nav class="d-flex header js-header" style="top: auto;">
+    <!-- Start Logo -->
+    <div class="header__logo">
+        <img src="Uenak Logo.png" alt="Uenak Logo">
+    </div>
+
+    <!-- Start Menu -->
+    <div class="header__nav">
+    
+        <div class="header__menu">
+            <ul class="header__menu--list">
+                <li class="item ">
+                    <a href="Uenak Restaurants.html" class="link js-dtm-link" data-event="Menu.restaurants" data-category="guide.homepage" data-country="en" data-guide="Global">
+                        Restaurants
+                    </a>
+                
+                <li class="item ">
+                    <a href="Uenak Favorites.html" class="link js-dtm-link" data-event="Menu.favorites" data-category="guide.homepage" data-country="en" data-guide="Global">
+                        Favorites
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    
+    </div>
+    <!-- Start Menu -->
+
+    <!-- Start Toggle Account Menu -->
+    <div class="header__account">
+        <button class="header__account--button js-open-menubar js-dtm-link" type="button" onclick="show()" aria-label="Menu" data-event="Menu.menu" data-category="guide.homepage" data-country="en" data-guide="Global">
+            
+                <img src="Default Profile Image.png" class="image-round js-img-profile-menu" alt="">
+            
+            <span class="header__account--button-icon">
+                <i class="burger-menu"></i>
+            </span>
+        </button>
+    </div>
+    <!-- End Toggle Account Menu -->
+</nav>
+
+</header>
+<!-- End Navbar -->
+
+<!-- Start Menu List Item -->
+<div class="menubar js-menubar" id="illusive">
+    <div class="menubar-wrapper">
+        <div class="menubar-content">
+            <ul class="menubar-content--list js-menu__container">
+<li class="menubar-content--stacklist">
+    <ul class="menubar-content--stack">
+        <li class="menubar-content--stack-item js-account__menu">
+            <a class="link js-dtm-link js-auth__login-button" href="javascript:void(0)" data-event="account.login" data-category="guide.homepage" data-country="en" data-guide="Global">
+                Login
+            </a>
+        </li>
+        <li class="menubar-content--stack-item js-account__menu">
+            <a class="link js-dtm-link js-auth__register-button" href="javascript:void(0)" data-event="account.registration" data-category="guide.homepage" data-country="en" data-guide="Global">
+                Register
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="menubar-content--list-item list-separator js-account__menu"></li>
+
+                
+                    
+                        <li class="menubar-content--list-item">
+                            <a class="link js-dtm-link" href="javascript:void(0)" target="_self" data-event="Menu.restaurants.burger" data-category="guide.homepage" data-country="en" data-guide="Global">Restaurants</a>
+                        </li>
+						
+						
+						
+						<li class="menubar-content--list-item">
+                            <a class="link js-dtm-link" href="javascript:void(0)" target="_self" data-event="Menu.hotels.burger" data-category="guide.homepage" data-country="en" data-guide="Global">Food Spots</a>
+                        </li>
+                    
+                
+                    
+                        <li class="menubar-content--list-item">
+                            <a class="link js-dtm-link" href="javascript:void(0)" target="_self" data-event="Menu.bestof_guides.burger" data-category="guide.homepage" data-country="en" data-guide="Global">Best-of Guides</a>
+                        </li>
+                    
+                
+                    
+                        <li class="menubar-content--list-item">
+                            <a class="link js-dtm-link" href="javascript:void(0)" target="_self" data-event="Menu.magazine.burger" data-category="guide.homepage" data-country="en" data-guide="Global">Inspiration</a>
+                        </li>
+                    
+                
+                    
+                        <li class="menubar-content--list-item">
+                            <a class="link js-dtm-link" href="javascript:void(0)" target="_self" data-event="Menu.favorites.burger" data-category="guide.homepage" data-country="en" data-guide="Global">My Favorites</a>
+                        </li>
+                    
+                
+                    
+                        <li class="menubar-content--list-item">
+                            <a class="link js-dtm-link" href="javascript:void(0)" target="_blank" rel="nofollow noopener" data-event="Menu.contact.burger" data-category="guide.homepage" data-country="en" data-guide="Global">Contact us</a>
+                        </li>
+                    
+                
+                    
+                        <li class="menubar-content--list-item">
+                            <a class="link js-dtm-link" href="javascript:void(0)" target="_self" data-event="Menu.subscribe_nl.burger" data-category="guide.homepage" data-country="en" data-guide="Global">Subscribe to our newsletter</a>
+                        </li>
+                    
+                
+                    
+                        <li class="menubar-content--list-item">
+                            <a class="link js-dtm-link" href="javascript:void(0)" target="_blank" rel="nofollow noopener" data-event="Menu.bookingpartnerpage.burger" data-category="guide.homepage" data-country="en" data-guide="Global">Uenak preferred partnership</a>
+                        </li>
+                    
+                    
+                
+                <li class="menubar-content--list-item list-separator"></li>
+                <li class="menubar-content--list-item">
+                    <span class="d-flex">
+                        <a class="link link-icon js-menu__display-setting" href="javascript:void(0)" data-toggle="modal" data-target="#selection-modal">
+                            
+                            <i class="icon map-marker"></i>
+                            Global - English
+                             - IDR
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Menu List Item -->
+
+<main class="" style="margin-top: 0px;">
+
+    
+<!-- Start Home Explore -->
+<div class="home-banner-explore home-explore-hero d-none d-lg-block js-home__banner">
+    <div class="home-banner-explore--container">
+        <div class="image-bg lazy entered loaded adjusted" data-bg="upbg.jpg" data-ll-status="loaded" style="background-image: url(&quot;upbg.jpg&quot;); background-position: center center;">
+            <noscript><img src="upbg.jpg" alt=""></noscript>
+        </div>
+    </div>
+
+    <div class="home-banner-explore__content">
+        <div class="home-restaurant--masthead">
+            <div class="home-restaurant--masthead-container">
+                <div class="row">
+                    <div class="col col-12 col-xl-5">
+                        <h4 class="home-restaurant--masthead-text">
+                            Discover restaurants and other food spots selected by the UENAK Guide
+                        </h4>
+                    </div>
+                </div>
+                
+<div class="home-restaurant-search">
+    <div class="home-banner-explore">
+        <div class="row no-gutters">
+            <div class="col col-12 col-xl-5">
+                <div class="home-banner-explore__tabs">
+                    <div class="tabs-container">
+                        <div class="tab-content">
+                            <div class="tabs-container__content js-autocomplete__container ">
+                                <div class="tabs-container__content--restaurant">
+                                    <form method="get" action="javascript:void(0)" data-suggest-url="/en/suggestion">
+                                        
+                                        <div class="typeahead__container flex-fill search-explore">
+                                            <span class="search-hotelswrap--close js-close-msearch">
+                                                <i class="fal fa-chevron-left fa-lg"></i>
+                                            </span>
+
+                                            <div class="typeahead__field">
+                                                <div class="search-explore__item js-autocomplete__search_box" data-language-base="/en" data-restaurants-base="/en/restaurants" data-city-guide-base="/en/best-of" data-search-city-guide="/en/search?type=city_guide" data-hotel-base="/en/hotels-stays" data-global-search="/en/search" data-location-index="prod-locations-en" data-cities-index="cities-i18n" data-restaurant-index="prod-restaurants-en" data-distance-index="prod-restaurants-en_sort_geo" data-distinction-index="prod-restaurants-en_sort_distinction" data-highest-price-index="prod-restaurants-en_sort_highest_price" data-lowest-price-index="prod-restaurants-en_sort_lowest_price" data-city-guide-index="prod-cityguides-en" data-article-index="prod-articles-en" data-max-facet-items="" data-site-code="global" data-site-name="Global" data-site-level="GLOBAL" data-language="en" data-whitelisted-sites="" data-whitelisted-countries="" data-location-label="Locations" data-restaurant-label="Restaurants" data-city-guide-label="Best-of guides" data-references-url="/en/public-rest/references.json" data-location-icon="/assets/images/icons/location-autocomplete.svg" data-restaurant-icon="/assets/images/icons/restaurant-autocomplete.svg" data-city-guide-icon="fa fa-compass" data-dtm-country="en" data-dtm-guide="Global" data-search-placeholder="Search for Destination, restaurant ..." data-search-nearby-placeholder="Find restaurants near me" data-search-map-placeholder="Search in the map" data-search-q="">
+                                                    
+                                                        <input type="hidden" name="q" value="" class="js-search__q">
+
+                                                        <div class="form-control search-explore__item--input js-search__field js-toggle-msearch"><div class="aa-Autocomplete" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="autocomplete-0-label"><form class="aa-Form" action="javascript:void(0)" novalidate="" role="search"><div class="aa-InputWrapperPrefix"><label class="aa-Label" for="autocomplete-0-input" id="autocomplete-0-label"><button class="aa-SubmitButton" type="submit" title="Submit"><svg class="aa-SubmitIcon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16.041 15.856c-0.034 0.026-0.067 0.055-0.099 0.087s-0.060 0.064-0.087 0.099c-1.258 1.213-2.969 1.958-4.855 1.958-1.933 0-3.682-0.782-4.95-2.050s-2.050-3.017-2.050-4.95 0.782-3.682 2.050-4.95 3.017-2.050 4.95-2.050 3.682 0.782 4.95 2.050 2.050 3.017 2.050 4.95c0 1.886-0.745 3.597-1.959 4.856zM21.707 20.293l-3.675-3.675c1.231-1.54 1.968-3.493 1.968-5.618 0-2.485-1.008-4.736-2.636-6.364s-3.879-2.636-6.364-2.636-4.736 1.008-6.364 2.636-2.636 3.879-2.636 6.364 1.008 4.736 2.636 6.364 3.879 2.636 6.364 2.636c2.125 0 4.078-0.737 5.618-1.968l3.675 3.675c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path></svg></button></label><div class="aa-LoadingIndicator" hidden=""><svg class="aa-LoadingIcon" viewBox="0 0 100 100" width="20" height="20"><circle cx="50" cy="50" fill="none" r="35" stroke="currentColor" stroke-dasharray="164.93361431346415 56.97787143782138" stroke-width="6">
+  <animatetransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;90 50 50;180 50 50;360 50 50" keyTimes="0;0.40;0.65;1"></animatetransform>
+</circle></svg></div></div><div class="aa-InputWrapper"><input class="aa-Input" aria-autocomplete="both" aria-labelledby="autocomplete-0-label" id="autocomplete-0-input" autocomplete="off" autocorrect="off" autocapitalize="off" enterkeyhint="search" spellcheck="false" placeholder="Search for Destination, restaurant ..." maxlength="512" type="search"></div><div class="aa-InputWrapperSuffix"><button class="aa-ClearButton" type="reset" title="Clear" hidden=""><svg class="aa-ClearIcon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg></button></div></form></div></div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="search-explore-result js-explore-result">
+                                    <div class="input-group input-search">
+                                        <div class="typeahead__container flex-fill">
+                                            <div class="typeahead__result js-autocomplete__search_results">
+                                                <div class="typeahead__list js-autocomplete__search_hits"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="home-banner-explore__footer">
+            
+                
+                
+                    
+                
+                <div class="home-banner-explore__footer--restaurants">
+                    <a href="https://www.plataran.com/plataran-dharmawangsa/" target="_blank" rel="nofollow noopener">
+                        
+                        <span class="distinction-icon rest-badgeicon"><img src="Star.png" class="michelin-award" alt="" style="width:50px;height:50px"></span>
+                        <p class="home-banner-explore__footer--country hbx">
+                            Plataran Dharmawangsa
+                        </p>
+
+                        <p class="home-banner-explore__footer--address hbx">
+                            Jakarta, Indonesia
+                        </p>
+                        
+                            <p class="home-banner-explore__footer--copy hbx">@Plataran Venue & Dining</p>
+                        
+                    </a>
+                </div>
+            
+        </div>
+    </div>
+</div>
+<!-- End Home Explore -->
+
+<!-- Start Restaurant Wizard -->
+<section class="section-search section-search--restaurant d-block d-lg-none">
+    <h2 class="section-search--label">
+        Restaurants
+    </h2>
+    
+<div class="home-restaurant-search">
+    <div class="home-banner-explore">
+        <div class="row no-gutters">
+            <div class="col col-12 col-xl-5">
+                <div class="home-banner-explore__tabs">
+                    <div class="tabs-container">
+                        <div class="tab-content">
+                            <div class="tabs-container__content js-autocomplete__container ">
+                                <div class="tabs-container__content--restaurant">
+                                    <form method="get" action="javascript:void(0)" data-suggest-url="/en/suggestion">
+                                        
+                                        <div class="typeahead__container flex-fill search-explore">
+                                            <span class="search-hotelswrap--close js-close-msearch">
+                                                <i class="fal fa-chevron-left fa-lg"></i>
+                                            </span>
+
+                                            <div class="typeahead__field">
+                                                <div class="search-explore__item js-autocomplete__search_box" data-language-base="/en" data-restaurants-base="/en/restaurants" data-city-guide-base="/en/best-of" data-search-city-guide="/en/search?type=city_guide" data-hotel-base="/en/hotels-stays" data-global-search="/en/search" data-location-index="prod-locations-en" data-cities-index="cities-i18n" data-restaurant-index="prod-restaurants-en" data-distance-index="prod-restaurants-en_sort_geo" data-distinction-index="prod-restaurants-en_sort_distinction" data-highest-price-index="prod-restaurants-en_sort_highest_price" data-lowest-price-index="prod-restaurants-en_sort_lowest_price" data-city-guide-index="prod-cityguides-en" data-article-index="prod-articles-en" data-max-facet-items="" data-site-code="global" data-site-name="Global" data-site-level="GLOBAL" data-language="en" data-whitelisted-sites="" data-whitelisted-countries="" data-location-label="Locations" data-restaurant-label="Restaurants" data-city-guide-label="Best-of guides" data-references-url="/en/public-rest/references.json" data-location-icon="/assets/images/icons/location-autocomplete.svg" data-restaurant-icon="/assets/images/icons/restaurant-autocomplete.svg" data-city-guide-icon="fa fa-compass" data-dtm-country="en" data-dtm-guide="Global" data-search-placeholder="Search for Destination, restaurant ..." data-search-nearby-placeholder="Find restaurants near me" data-search-map-placeholder="Search in the map" data-search-q="">
+                                                    
+                                                        <input type="hidden" name="q" value="" class="js-search__q">
+
+                                                        <div class="form-control search-explore__item--input js-search__field js-toggle-msearch"><div class="aa-Autocomplete" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="autocomplete-1-label"><form class="aa-Form" action="javascript:void(0)" novalidate="" role="search"><div class="aa-InputWrapperPrefix"><label class="aa-Label" for="autocomplete-1-input" id="autocomplete-1-label"><button class="aa-SubmitButton" type="submit" title="Submit"><svg class="aa-SubmitIcon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16.041 15.856c-0.034 0.026-0.067 0.055-0.099 0.087s-0.060 0.064-0.087 0.099c-1.258 1.213-2.969 1.958-4.855 1.958-1.933 0-3.682-0.782-4.95-2.050s-2.050-3.017-2.050-4.95 0.782-3.682 2.050-4.95 3.017-2.050 4.95-2.050 3.682 0.782 4.95 2.050 2.050 3.017 2.050 4.95c0 1.886-0.745 3.597-1.959 4.856zM21.707 20.293l-3.675-3.675c1.231-1.54 1.968-3.493 1.968-5.618 0-2.485-1.008-4.736-2.636-6.364s-3.879-2.636-6.364-2.636-4.736 1.008-6.364 2.636-2.636 3.879-2.636 6.364 1.008 4.736 2.636 6.364 3.879 2.636 6.364 2.636c2.125 0 4.078-0.737 5.618-1.968l3.675 3.675c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path></svg></button></label><div class="aa-LoadingIndicator" hidden=""><svg class="aa-LoadingIcon" viewBox="0 0 100 100" width="20" height="20"><circle cx="50" cy="50" fill="none" r="35" stroke="currentColor" stroke-dasharray="164.93361431346415 56.97787143782138" stroke-width="6">
+  <animatetransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;90 50 50;180 50 50;360 50 50" keyTimes="0;0.40;0.65;1"></animatetransform>
+</circle></svg></div></div><div class="aa-InputWrapper"><input class="aa-Input" aria-autocomplete="both" aria-labelledby="autocomplete-1-label" id="autocomplete-1-input" autocomplete="off" autocorrect="off" autocapitalize="off" enterkeyhint="search" spellcheck="false" placeholder="Search for Destination, restaurant ..." maxlength="512" type="search"></div><div class="aa-InputWrapperSuffix"><button class="aa-ClearButton" type="reset" title="Clear" hidden=""><svg class="aa-ClearIcon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg></button></div></form></div></div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="search-explore-result js-explore-result">
+                                    <div class="input-group input-search">
+                                        <div class="typeahead__container flex-fill">
+                                            <div class="typeahead__result js-autocomplete__search_results">
+                                                <div class="typeahead__list js-autocomplete__search_hits"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+</section>
+<!-- End Restaurant Wizard -->
+
+<!-- Start Custom Section -->
+<section class="section-main section-experience">
+    <div class="container">
+        <div class="section-header have-slider-nav">
+            <h2 class="section__heading section__heading_title">Guide Selections</h2>
+
+        </div>
+
+        <div class="section-main-content scroll-container">
+            <div class="owl-mobile-fitwidth owl-card-box">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag" id="js-owl-custom-section-0" data-padding="0">
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2651px;"><div class="owl-item active" style="width: 378.667px;"><div class="item pb-0">
+                            
+<div class="card__menu js-match-height" data-index="0" style="height: 454.663px;">
+    <div class="card__menu-image">
+        
+            <a href="https://depotburudy.co.id/" class="image-wrapper lazy entered loaded adjusted" target="_blank" aria-label="Open 3 Days in London" data-position-x="50" data-position-y="50" data-bg="gs1.jpg" rel="nofollow noopener" data-ll-status="loaded" style="background-image: url(&quot;gs1.jpg&quot;); background-position: 50% 50%;">
+                
+                <noscript><img src="gs1.jpg" class="scroll-img" width="262" height="203" alt=""></noscript>
+            </a>
+        
+    </div>
+
+    <div class="card__menu-content js-match-height-content" style="height: 92px;">
+        <h3 class="card__menu-content--title experiences__title">
+            <a href="https://depotburudy.co.id/" aria-label="Open 3 Days in London" target="_blank" rel="nofollow noopener">
+                Depot Bu Rudy
+            </a>
+        </h3>
+
+        <div class="experiences__description">
+            
+        </div>
+    </div>
+
+	
+    
+    <a href="https://depotburudy.co.id/" class="link" aria-label="Open 3 Days in London" target="_blank" rel="nofollow noopener"></a>
+</div>
+
+                        </div></div><div class="owl-item active" style="width: 378.667px;"><div class="item pb-0">
+                            
+<div class="card__menu js-match-height" data-index="1" style="height: 454.663px;">
+    <div class="card__menu-image">
+        
+            <a href="https://www.primarasaresto.com/" class="image-wrapper lazy entered loaded adjusted" target="_blank" aria-label="Open Kuala Lumpur for Solo Traveller&#39;s" data-position-x="50" data-position-y="50" data-bg="gs2.jpg" rel="nofollow noopener" data-ll-status="loaded" style="background-image: url(&quot;gs2.jpg&quot;); background-position: 50% 50%;">
+                
+                <noscript><img src="gs2.jpg" class="scroll-img" width="262" height="203" alt=""></noscript>
+            </a>
+        
+    </div>
+
+    <div class="card__menu-content js-match-height-content" style="height: 92px;">
+        <h3 class="card__menu-content--title experiences__title">
+            <a href="https://www.primarasaresto.com/" aria-label="Open Kuala Lumpur for Solo Traveller&#39;s" target="_blank" rel="nofollow noopener">
+                Ayam Bakar Primarasa, Resto
+            </a>
+        </h3>
+
+        <div class="experiences__description">
+            
+        </div>
+    </div>
+
+    
+    <a href="https://www.primarasaresto.com/" class="link" aria-label="Open Kuala Lumpur for Solo Traveller&#39;s" target="_blank" rel="nofollow noopener"></a>
+</div>
+
+                        </div></div><div class="owl-item active" style="width: 378.667px;"><div class="item pb-0">
+                            
+<div class="card__menu js-match-height" data-index="2" style="height: 454.663px;">
+    <div class="card__menu-image">
+        
+            <a href="https://aperitif.com/" class="image-wrapper lazy entered loaded adjusted" target="_blank" aria-label="Open Paris in Summer: 14 Must-Sees" data-position-x="50" data-position-y="50" data-bg="gs3.png" rel="nofollow noopener" data-ll-status="loaded" style="background-image: url(&quot;gs3.png&quot;); background-position: 50% 50%;">
+                
+                <noscript><img src="gs3.png" class="scroll-img" width="262" height="203" alt=""></noscript>
+            </a>
+        
+    </div>
+
+    <div class="card__menu-content js-match-height-content" style="height: 92px;">
+        <h3 class="card__menu-content--title experiences__title">
+            <a href="https://aperitif.com/" aria-label="Open Paris in Summer: 14 Must-Sees" target="_blank" rel="nofollow noopener">
+                Apéritif Restaurant
+            </a>
+        </h3>
+
+        <div class="experiences__description">
+            
+        </div>
+    </div>
+
+    
+    <a href="https://aperitif.com/" class="link" aria-label="Open Paris in Summer: 14 Must-Sees" target="_blank" rel="nofollow noopener"></a>
+</div>
+
+                        </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots disabled" style=""></div></div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- End Custom Section -->
+
+<!-- Start Custom Section -->
+<section class="section-main section-experience">
+    <div class="container">
+        <div class="section-header have-slider-nav">
+            <h2 class="section__heading section__heading_title">Food Spots</h2>
+
+        </div>
+
+        <div class="section-main-content">
+            <div class="owl-mobile-fitwidth owl-card-box">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag" id="js-owl-custom-section-0" data-padding="0">
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2651px;"><div class="owl-item active" style="width: 378.667px;"><div class="item pb-0">
+                            
+<div class="card__menu js-match-height" data-index="0" style="height: 454.663px;">
+    <div class="card__menu-image">
+        
+            <a href="https://www.instagram.com/jimbaran_beach_cafe/?hl=en" class="image-wrapper lazy entered loaded adjusted" target="_blank" aria-label="Open 3 Days in London" data-position-x="50" data-position-y="50" data-bg="fs1.png" rel="nofollow noopener" data-ll-status="loaded" style="background-image: url(&quot;fs1.png&quot;); background-position: 50% 50%;">
+                
+                <noscript><img src="fs1.png" class="scroll-img" width="262" height="203" alt=""></noscript>
+            </a>
+        
+    </div>
+
+    <div class="card__menu-content js-match-height-content" style="height: 92px;">
+        <h3 class="card__menu-content--title experiences__title">
+            <a href="https://www.instagram.com/jimbaran_beach_cafe/?hl=en" aria-label="Open 3 Days in London" target="_blank" rel="nofollow noopener">
+                Jimbaran Beach Cafe
+            </a>
+        </h3>
+
+        <div class="experiences__description">
+            
+        </div>
+    </div>
+
+    
+    <a href="https://www.instagram.com/jimbaran_beach_cafe/?hl=en" class="link" aria-label="Open 3 Days in London" target="_blank" rel="nofollow noopener"></a>
+</div>
+
+                        </div></div><div class="owl-item active" style="width: 378.667px;"><div class="item pb-0">
+                            
+<div class="card__menu js-match-height" data-index="1" style="height: 454.663px;">
+    <div class="card__menu-image">
+        
+            <a href="javascript:void(0)" class="image-wrapper lazy entered loaded adjusted" target="_blank" aria-label="Open Kuala Lumpur for Solo Traveller&#39;s" data-position-x="50" data-position-y="50" data-bg="fs2.png" rel="nofollow noopener" data-ll-status="loaded" style="background-image: url(&quot;fs2.png&quot;); background-position: 50% 50%;">
+                
+                <noscript><img src="fs2.png" class="scroll-img" width="262" height="203" alt=""></noscript>
+            </a>
+        
+    </div>
+
+    <div class="card__menu-content js-match-height-content" style="height: 92px;">
+        <h3 class="card__menu-content--title experiences__title">
+            <a href="javascript:void(0)" aria-label="Open Kuala Lumpur for Solo Traveller&#39;s" target="_blank" rel="nofollow noopener">
+                Warung Kongde Mbak May
+            </a>
+        </h3>
+
+        <div class="experiences__description">
+            
+        </div>
+    </div>
+
+    
+    <a href="javascript:void(0)" class="link" aria-label="Open Kuala Lumpur for Solo Traveller&#39;s" target="_blank" rel="nofollow noopener"></a>
+</div>
+
+                        </div></div><div class="owl-item active" style="width: 378.667px;"><div class="item pb-0">
+                            
+<div class="card__menu js-match-height" data-index="2" style="height: 454.663px;">
+    <div class="card__menu-image">
+        
+            <a href="https://www.instagram.com/pallubasaserigala/?hl=en" class="image-wrapper lazy entered loaded adjusted" target="_blank" aria-label="Open Paris in Summer: 14 Must-Sees" data-position-x="50" data-position-y="50" data-bg="fs3.png" rel="nofollow noopener" data-ll-status="loaded" style="background-image: url(&quot;fs3.png&quot;); background-position: 50% 50%;">
+                
+                <noscript><img src="fs3.png" class="scroll-img" width="262" height="203" alt=""></noscript>
+            </a>
+        
+    </div>
+
+    <div class="card__menu-content js-match-height-content" style="height: 92px;">
+        <h3 class="card__menu-content--title experiences__title">
+            <a href="https://www.instagram.com/pallubasaserigala/?hl=en" aria-label="Open Paris in Summer: 14 Must-Sees" target="_blank" rel="nofollow noopener">
+                Pallubasa Serigala
+            </a>
+        </h3>
+
+        <div class="experiences__description">
+            
+        </div>
+    </div>
+
+    
+    <a href="https://www.instagram.com/pallubasaserigala/?hl=en" class="link" aria-label="Open Paris in Summer: 14 Must-Sees" target="_blank" rel="nofollow noopener"></a>
+</div>
+
+                        </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots disabled" style=""></div></div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- End Custom Section -->
+
+
+<!-- Start Custom Section -->
+<section class="section-main section-experience">
+    <div class="container">
+        <div class="section-header have-slider-nav">
+            <h2 class="section__heading section__heading_title">About the UENAK Guide</h2>
+
+            <div class="btn-carousel hide-not-dekstop">
+                <button class="btn btn-outline-secondary btn-sm btn-carousel__link js-prev-carousel" data-target="js-owl-custom-section-4" aria-label="Previous About the MICHELIN Guide" style="display: none;">
+                    <span class="icon fal fa-angle-left"></span>
+                </button>
+                <button class="btn btn-outline-secondary btn-sm btn-carousel__link js-next-carousel" data-target="js-owl-custom-section-4" aria-label="Next About the MICHELIN Guide" style="">
+                    <span class="icon fal fa-angle-right"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="section-main-content">
+            <div class="owl-mobile-fitwidth owl-card-box">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag" id="js-owl-custom-section-4" data-padding="0">
+                                       
+                    
+                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 3030px;"><div class="owl-item active" style="width: 378.667px;"><div class="item pb-0">
+                            
+<div class="card__menu js-match-height" data-index="0" style="height: 630.062px; position:center">
+    <div class="card__menu-image">
+        
+            <a href="javascript:void(0)" class="image-wrapper lazy entered loaded adjusted" target="_blank" aria-label="Open What is a MICHELIN Star?" data-position-x="50" data-position-y="50" data-bg="Star.png" rel="nofollow noopener" data-ll-status="loaded" style="background-image: url(&quot;Star.png&quot;); background-position: 50% 50%;">
+                
+                <noscript><img src="Star.png" width="262" height="203" alt=""></noscript>
+            </a>
+        
+    </div>
+
+    <div class="card__menu-content js-match-height-content" style="height: 189px;">
+        <h3 class="card__menu-content--title experiences__title">
+            <a href="javascript:void(0)" aria-label="Open What is a MICHELIN Star?" target="_blank" rel="nofollow noopener">
+                What is an UENAK Star?
+            </a>
+        </h3>
+
+        <div class="experiences__description">
+            <p>All your questions answered by an UENAK Guide Inspector. <br><br></p>
+        </div>
+    </div>
+
+    
+        <div class="card__menu-footer card__menu-footer--link card__menu-footer--noborder">
+            <div class="row justify-content-md-center align-items-center justify-content-center">
+                <a href="javascript:void(0)" class="btn btn-primary" aria-label="Open What is a MICHELIN Star?" rel="nofollow noopener">Discover</a>
+            </div>
+        </div>
+    
+    <a href="javascript:void(0)" class="link" aria-label="Open What is a MICHELIN Star?"  rel="nofollow noopener"></a>
+</div>
+
+                        </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots disabled" style=""></div></div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- End Custom Section -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start City Guide Section -->
+    <section class="section-main section-guide">
+        <div class="container">
+            <div class="section-header have-slider-nav">
+                <h2 class="section__heading section__heading_title">
+                    Inspiration: Best-Of Guides
+                </h2>
+
+            </div>
+
+            <div class="section-main-content">
+                <div class="owl-carousel-guide owl-mobile-fitwidth owl-card-box">
+                    <div class="owl-carousel owl-theme owl-loaded owl-drag" id="js-owl-carousel-city-guide" data-padding="0" data-item-classes="item">
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 3030px;"><div class="owl-item active" style="width: 378.667px;"><div class="item">
+                                
+<!-- Start City Guide Card -->
+
+
+
+<div data-index="0" class="city-guide-card card-bg pl-image js-city-guide__list_item js-card__link lazy entered loaded adjusted" data-bg="ins1.png" data-position-x="50" data-position-y="50" data-url="javascript:void(0)" data-ll-status="loaded" style="background-image: url(&quot;ins1.png&quot;); background-position: 50% 50%;">
+    <noscript>
+        <img src="ins1.png" alt="">
+    </noscript>
+
+    <div class="card-bg__content">
+        <div class="card-bg__content_inner">
+            
+                <a href="javascript:void(0)" aria-label="Go to NYC" class="btn btn-sm card-bg__tag pl-text">
+                    <span class="card-bg__sub-title">Bali</span></a>
+            
+            <div class="card-bg__headline">
+                <h3 class="card-bg__title pl-text pl-big">
+                    <a href="javascript:void(0)" aria-label="Go to The Best Apple-Focused Desserts in New York City" class="card-bg__title-link">Best Beachfront Restaurants in Bali</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-bg__overlay"></div>
+</div>
+<!-- End City Guide Card -->
+
+                            </div></div><div class="owl-item active" style="width: 378.667px;"><div class="item">
+                                
+<!-- Start City Guide Card -->
+
+
+
+<div data-index="0" class="city-guide-card card-bg pl-image js-city-guide__list_item js-card__link lazy entered loaded adjusted" data-bg="ins2.png" data-position-x="50" data-position-y="50" data-url="javascript:void(0)" data-ll-status="loaded" style="background-image: url(&quot;ins2.png&quot;); background-position: 50% 50%;">
+    <noscript>
+        <img src="ins2.png" alt="">
+    </noscript>
+
+    <div class="card-bg__content">
+        <div class="card-bg__content_inner">
+            
+                <a href="javascript:void(0)" aria-label="Go to New York" class="btn btn-sm card-bg__tag pl-text">
+                    <span class="card-bg__sub-title">Jakarta</span></a>
+            
+            <div class="card-bg__headline">
+                <h3 class="card-bg__title pl-text pl-big">
+                    <a href="javascript:void(0)" aria-label="Go to The Best Korean Restaurants in New York City" class="card-bg__title-link">The Best Fine Dining Experience in Jakarta</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-bg__overlay"></div>
+</div>
+<!-- End City Guide Card -->
+
+                            </div></div><div class="owl-item active" style="width: 378.667px;"><div class="item">
+                                
+<!-- Start City Guide Card -->
+
+
+
+<div data-index="0" class="city-guide-card card-bg pl-image js-city-guide__list_item js-card__link lazy entered loaded adjusted" data-bg="ins3.png" data-position-x="50" data-position-y="50" data-url="javascript:void(0)" data-ll-status="loaded" style="background-image: url(&quot;ins3.png&quot;); background-position: 50% 50%;">
+    <noscript>
+        <img src="ins3.png" alt="">
+    </noscript>
+
+    <div class="card-bg__content">
+        <div class="card-bg__content_inner">
+            
+                <a href="javascript:void(0)" aria-label="Go to New York" class="btn btn-sm card-bg__tag pl-text">
+                    <span class="card-bg__sub-title">Surabaya</span></a>
+            
+            <div class="card-bg__headline">
+                <h3 class="card-bg__title pl-text pl-big">
+                    <a href="javascript:void(0)" aria-label="Go to The Best MICHELIN Guide Restaurants for Spicy Food" class="card-bg__title-link">The Best UENAK Guide Restaurants for Spicy Food and Culinaries</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-bg__overlay"></div>
+</div>
+<!-- End City Guide Card -->
+
+                            </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots disabled" style=""></div></div>
+                </div>
+            </div>
+
+
+
+<!-- Start Section -->
+    <section class="section-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-border">
+                        <img class="card-border__img-dekstop lazy" data-src="javascript:void(0)" width="300" height="400" alt="">
+                        <noscript><img src="javascript:void(0)" width="300" height="400" class="card-border__img-dekstop" alt=""></noscript>
+                        <div class="card-border__content">
+                            <div class="card-border__content-center">
+                                <h3 class="card-border__title">
+                                    About the UENAK Guide
+                                </h3>
+                                <p>Inside our history and the lives of our inspectors</p>
+                                    <div class="card-border__img-mobile js-match-height-media lazy" data-bg="javascript:void(0)">
+                                    <noscript><img src="javascript:void(0)" width="256" height="157" alt=""></noscript>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-primary btn-more" aria-label="Everything about the MICHELIN Guide">
+                                    Everything about the UENAK Guide
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+
+<!-- Start Section -->
+    <section class="section-main last">
+        <div class="container">
+            <div class="section-header have-slider-nav">
+                <h2 class="section__heading section__heading_title">
+                    
+                        Our partnerships with established brands
+                    
+                </h2>
+                <div class="btn-carousel hide-not-dekstop">
+                    <button class="btn btn-outline-secondary btn-sm btn-carousel__link js-prev-carousel" data-target="js-owl-carousel-partners" aria-label="Previous Partner" style="display: none;">
+                        <span class="icon fal fa-angle-left"></span>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm btn-carousel__link js-next-carousel" data-target="js-owl-carousel-partners" aria-label="Next Partner" style="display: none;">
+                        <span class="icon fal fa-angle-right"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="section-main-content">
+                <div class="owl-mobile-fitwidth owl-card-box carousel-brand">
+                    <div class="owl-carousel owl-theme js-auto-square-partner owl-loaded owl-drag" id="js-owl-carousel-partners" data-padding="80" data-padding-tab="16" data-padding-mobile="16" data-show-dekstop="5" data-show-tab="4" data-show-mobile="2" data-mobile-center="false" data-mobile-autowidth="true" data-dekstop-autowidth="false">
+                        
+                            
+                        
+                            
+                        
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 480px;"><div class="owl-item active" style="width: 160px; margin-right: 80px;"><div class="item">
+                                <div class="carousel-brand__item">
+                                    <picture class="carousel-brand__image">
+                                        
+											<source srcset="pa1.jp2" type="image/jp2">
+                                        
+                                            <source srcset="pa1.webp" type="image/webp">
+										
+                                        <img data-srcset="pa1.png" width="160" height="160" alt="" class="lazy">
+                                        <noscript><img src="pa1.png" width="160" height="160" alt=""></noscript>
+                                    </picture>
+                                    <div class="carousel-brand__sub">Trusted Partner</div>
+                                    <h5 class="carousel-brand__title">Wonderful Indonesia</h5>
+                                    
+                                        <a href="javascript:void(0)" target="_blank" rel="nofollow noopener" aria-label="Go to Blancpain website"></a>
+                                    
+                                </div>
+                            </div></div><div class="owl-item active" style="width: 160px; margin-right: 80px;"><div class="item">
+                                <div class="carousel-brand__item">
+                                    <picture class="carousel-brand__image">
+                                        
+                                            <source srcset="pa2.jp2" type="image/jp2">
+                                        
+                                            <source srcset="pa2.webp" type="image/webp">
+                                        
+                                        <img data-srcset="pa2.png" width="160" height="160" alt="" class="lazy">
+                                        <noscript><img src="pa2.png" width="160" height="160" alt=""></noscript>
+                                    </picture>
+                                    <div class="carousel-brand__sub">Trusted Partner</div>
+                                    <h5 class="carousel-brand__title">GrabFood</h5>
+                                    
+                                        <a href="javascript:void(0)" target="_blank" rel="nofollow noopener" aria-label="Go to Lafont website"></a>
+                                    
+                                </div>
+                            </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots disabled" style=""></div></div>
+                </div>
+                <div class="text-center btn-more-wrapper btn-more-wrapper__normal">
+                    <a href="javascript:void(0)" class="btn btn-border btn-more js-dtm-link" aria-label="See all partners" data-event="see_all_partner" data-category="guide.homepage" data-guide="Global" data-country="en">
+                        See all partners
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+
+
+
+
+
+<script id="account-menu-template" type="x-tmpl-mustache">
+{{#isSignedIn}}
+<li class="menubar-content--stacklist">
+    <ul class="menubar-content--stack">
+        <li class="menubar-content--stack-item js-account__menu">
+            <a href="/en/account" class="link js-dtm-link js-auth__profile-button" aria-label="Open Account" data-event="account.profile" data-category="guide.homepage" data-country="en" data-guide="Global">
+                My Account
+            </a>
+        </li>
+        <li class="menubar-content--stack-item js-account__menu">
+            <a class="link js-dtm-link js-auth__logout-button" href="javascript:void(0)"
+               data-event="account.logout"
+               data-category="guide.homepage"
+               data-country="en"
+               data-guide="Global">
+                Logout
+            </a>
+        </li>
+    </ul>
+</li>
+{{/isSignedIn}}
+{{^isSignedIn}}
+<li class="menubar-content--stacklist">
+    <ul class="menubar-content--stack">
+        <li class="menubar-content--stack-item js-account__menu">
+            <a class="link js-dtm-link js-auth__login-button" href="javascript:void(0)"
+               data-event="account.login"
+               data-category="guide.homepage"
+               data-country="en"
+               data-guide="Global">
+                Login
+            </a>
+        </li>
+        <li class="menubar-content--stack-item js-account__menu">
+            <a class="link js-dtm-link js-auth__register-button"
+               href="javascript:void(0)"
+               data-event="account.registration"
+               data-category="guide.homepage"
+               data-country="en"
+               data-guide="Global">
+                Register
+            </a>
+        </li>
+    </ul>
+</li>
+{{/isSignedIn}}
+<li class="menubar-content--list-item list-separator js-account__menu"></li>
+</script>
+
+<script>
+function show() {
+	let element = document.getElementById("illusive");
+	element.classList.add("show");
+	if(element.classList.contains("hide")) {element.classList.remove("hide");}
+}
+
+function hide() {
+	let element = document.getElementById("illusive");
+	if(element.classList.contains("show")) {element.classList.remove("show");}
+}
+</script>
+
+<script>
+function fadeNav(){  
+  var offset = getScrollXY();
+  //if y offset is greater than 0, set opacity to desired value, otherwise set to 1
+  offset[1] > 0 ? setNavOpacity(0.5) : setNavOpacity(1.0); 
+}
+
+function setNavOpacity(newOpacity){
+  var navBar = document.getElementById("navibar");
+  navBar.style.opacity = newOpacity;
+}
+
+function getScrollXY() {
+  var scrOfX = 0, scrOfY = 0;
+if( typeof( window.pageYOffset ) == 'number' ) {
+  //Netscape compliant
+  scrOfY = window.pageYOffset;
+  scrOfX = window.pageXOffset;
+} else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {
+  //DOM compliant
+  scrOfY = document.body.scrollTop;
+  scrOfX = document.body.scrollLeft;
+} else if( document.documentElement && ( document.documentElement.scrollLeft ||     
+  document.documentElement.scrollTop ) ) {
+  //IE6 standards compliant mode
+  scrOfY = document.documentElement.scrollTop;
+  scrOfX = document.documentElement.scrollLeft;
+}
+
+  return [ scrOfX, scrOfY ];
+}
+  window.onscroll = fadeNav;
+</script>
+
+<style>
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.scroll-img {
+  padding: 10px;
+}
+
+.home-restaurant--masthead-text {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #EB660A,
+    1px -1px 0 #EB660A,
+    -1px 1px 0 #EB660A,
+    1px 1px 0 #EB660A;  
+}
+
+.hbx {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+</style>
+
+</body>
+</html>
