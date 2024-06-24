@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head></head>
+
+<body>
+
+<!--
+<div id="divid" style="position: absolute; left: 9000px;">Far Right</div>
+<div style="position:absolute;left:9500px">Edge</div>
+
+<button onClick="javascript:location.hash='divid';">A</button>
+-->
+
+<div id="container">
+
+ <div class="inside"></div>
+ <div class="inside"></div>
+ <div class="inside"></div>
+ <div class="inside"></div>
+ 
+
+
+</div>
+
+<button onClick="javascript:scr();">BRUH</button>
+
+<style>
+
+ #container {
+	width: 600px;
+	height: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: rgb(200, 200, 200);
+	padding: 10px;
+	scroll-behavior: smooth;
+	transform: translate3d(0px, 0px, 0px);
+	transition: all 0.25s ease 0s;
+ }
+ 
+ .inside {
+	width: 300px;
+	height: 150px;
+	background-color: #fff;
+	margin: 20px 5px;
+	align-self: center;
+	display: inline-block;
+ }
+
+
+
+</style>
+
+<script>
+ var bu = document.getElementById("container");
+ function scr() {
+	bu.scrollLeft += 120;
+ }
+</script>
+
+</body>

@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Figtree Regular';
+	src: url('fonts/Figtree-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Figtree Medium';
+	src: url('fonts/Figtree-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Figtree SemiBold';
+	src: url('fonts/Figtree-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Figtree Bold';
+	src: url('fonts/Figtree-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Annuels';
+	src: url("fonts/Annuels.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+@font-face {
+    font-family: "Font Awesome Light";
+    src: url(fonts/FontAwesome-Light.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-display: auto;
+}
