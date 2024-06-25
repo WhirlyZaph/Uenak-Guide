@@ -1,7 +1,8 @@
 // Scrolling
 var navbar = document.getElementById("navbar");
+var noscroll = false;
 function whenScroll(scrollFlag) {
-	if (scrollFlag.deltaY > 0) {navbar.setAttribute("style", "top:-80px");}
+	if (scrollFlag.deltaY > 0 && !noscroll) {navbar.setAttribute("style", "top:-80px");}
 	else {navbar.setAttribute("style", "top:0");}
 }
 document.addEventListener("wheel", whenScroll);
@@ -41,5 +42,32 @@ function content1() {
 	} else {
 		buttonLeft1.setAttribute("style", "visibility:visible");
 		buttonRight1.setAttribute("style", "visibility:visible");
+	}
+}
+var c2 = 3;
+var cards2 = document.getElementById("cc2");
+var buttonLeft2 = document.getElementById("cbl2");
+var buttonRight2 = document.getElementById("cbr2");
+function contentLeft2() {
+	c2 -= 1;
+	content2();
+}
+function contentRight2() {
+	c2 += 1;
+	let tempc2 = document.getElementById("cci2 " + c2);
+	tempc2.classList.remove("lazy");
+	content2();
+}
+function content2() {
+	let tempc2 = -378 * (c2 - 3);
+	let trans2 = "transform:translate3d(" + tempc2 + "px, 0px, 0px)";
+	cards2.setAttribute("style", trans2);
+	if (c2 <= 3) {
+		buttonLeft2.setAttribute("style", "visibility:hidden");
+	} else if (c2 >= 7) {
+		buttonRight2.setAttribute("style", "visibility:hidden");
+	} else {
+		buttonLeft2.setAttribute("style", "visibility:visible");
+		buttonRight2.setAttribute("style", "visibility:visible");
 	}
 }
