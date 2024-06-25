@@ -4,9 +4,9 @@
 }
 
 img {
-	max-width: 100%;
-	vertical-align: middle;
-	border-style: none;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
 }
 
 ul {
@@ -15,126 +15,126 @@ ul {
 }
 
 a {
-	color: #007bff;
+    color: #007bff;
     text-decoration: none;
     background-color: transparent;
 }
 
 button {
-	display: inline-block;
+    display: inline-block;
     font-weight: 400;
-	text-align: center;
+    text-align: center;
     vertical-align: middle;
-	user-select: none;
-	text-transform: none;
-	overflow: visible;
-	margin: 0;
+    user-select: none;
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
 }
 
 body {
-	position: absolute;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 	
-	font-family: "Figtree Regular", "Helvetica Neue Light", sans-serif;
+    font-family: "Figtree Regular", "Helvetica Neue Light", sans-serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: normal;
     color: #191919;
-	text-align: left;
+    text-align: left;
     background-color: #fff;
 }
 /* End of commons */
 
 #navbar {
-	top: 0;
-	position: fixed;
-	z-index: 1000;
-	display: flex;
-	left: 0;
-	width: 100%;
-	height: 80px;
-	box-shadow: 0 1px 12px 0 rgba(204, 204, 204, 0.72);
-	background-color: white;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 1px 12px 0 rgba(204, 204, 204, 0.72);
+    background-color: white;
 	
-	transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 #navbarLogo {
-	height: 32px;
-	margin-left: 24px;
-	margin-top: 24px;
-	position: relative;
-	top: 0;
+    height: 32px;
+    margin-left: 24px;
+    margin-top: 24px;
+    position: relative;
+    top: 0;
 }
 #navbarLogo img {
-	height: 100%;
-	width: auto;
+    height: 100%;
+    width: auto;
 }
 
 #navbarMenuBox {
-	padding: 16px 0px 16px 56px;
-	flex: 1;
+    padding: 16px 0px 16px 56px;
+    flex: 1;
 }
 #navbarMenu {
-	float: right;
+    float: right;
 }
 #navbarMenu ul {
-	display: flex;
+    display: flex;
     list-style: none;
     line-height: 2.3;
-	margin-top: 5px;
-	margin-bottom: 0;
-	padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 #navbarMenu li {
-	font-family: "Figtree Medium", "Helvetica Neue Medium", sans-serif;
+    font-family: "Figtree Medium", "Helvetica Neue Medium", sans-serif;
     margin-right: 14px;
     font-size: 15px;
-	display: list-item;
+    display: list-item;
 	
 }
 #navbarMenu a {
-	color: #222227;
+    color: #222227;
     cursor: pointer;
     padding: 6px 22px;
     text-decoration: none;
-	background-color: transparent;
+    background-color: transparent;
 }
 
 #navbarAccount {
-	display: block;
+    display: block;
     margin-top: 10px;
     margin-right: 24px;
 }
 #navbarAccount button {
-	padding: 8px 16px;
-	display: flex;
+    padding: 8px 16px;
+    display: flex;
     min-height: 58px;
     border-radius: 8px;
     background-color: #ffffff;
     border: 1px solid #eeeeee;
     margin-left: 13px;
     outline: none;
-	text-transform: none;
-	overflow: visible;
-	cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+    cursor: pointer;
 }
 #navbarAccount button:hover {
-	background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 #navbarAccount img {
-	width: 40px;
+    width: 40px;
     height: 40px;
     margin-right: 12px;
-	border-radius: 50%;
+    border-radius: 50%;
     border: 1px solid #ccc;
 }
 #navbarAccount i {
-	background-image: url("images/Burger Menu.svg");
+    background-image: url("images/Burger Menu.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 22px 22px;
@@ -146,7 +146,7 @@ body {
 }
 
 .menubar {
-	position: fixed;
+    position: fixed;
     top: 70px;
     right: 23px;
     min-width: 340px;
@@ -158,39 +158,39 @@ body {
     z-index: -1;
 }
 #menubarWrapper {
-	padding: 21px 34px 23px 26px;
+    padding: 21px 34px 23px 26px;
 }
 .menubar ul {
-	list-style: none;
+    list-style: none;
     padding-left: 0;
     margin-bottom: 0;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 .menubar li:first-child {
-	padding-left: 0;
+    padding-left: 0;
     border-left: none;
 }
 .menubar li:first-child a {
-	padding: 0 0 6px 0;
+    padding: 0 0 6px 0;
 }
 .menubar li a {
-	color: #333333;
+    color: #333333;
     font-size: 14px;
     padding: 6px 0;
     display: block;
     cursor: pointer;
 }
 #menubarSeparator {
-	border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     margin: 18px 0;
     padding: 0;
 }
 .menubar span {
-	display: flex;
+    display: flex;
 }
 .menubar span a {
-	display: flex;
+    display: flex;
 }
 .menubar span a i {
     margin-right: 8px;
@@ -209,18 +209,18 @@ body {
 }
 
 #homeExplore {
-	position: relative;
-	top: 0;
-	left: 0;
+    position: relative;
+    top: 0;
+    left: 0;
     padding: 80px 0px;
     height: 577px;
-	margin: 0 auto;
+    margin: 0 auto;
     width: 100%;
     transition: 0.1ms;
     background-color: transparent;
 }
 #homeImage {
-	position: absolute;
+    position: absolute;
     top: 0px;
     left: 0;
     width: 100%;
@@ -230,7 +230,7 @@ body {
     background-repeat: no-repeat;
 }
 #homeContent {
-	width: 80%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
     z-index: 3;
@@ -239,28 +239,28 @@ body {
     position: relative;
 }
 #homeMastHead {
-	position: relative;
+    position: relative;
     top: 145px;
 }
 #homeRow {
-	margin-right: -16px;
+    margin-right: -16px;
     margin-left: -16px;
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 #homeCol {
-	padding-right: 16px;
+    padding-right: 16px;
     padding-left: 16px;
-	flex: 0 0 41.66666667%;
+    flex: 0 0 41.66666667%;
     max-width: 41.66666667%;
 }
 #homeText {
-	font-size: 27px;
+    font-size: 27px;
     line-height: 1.4;
     margin-bottom: 32px;
-	font-family: "Figtree Medium", "Helvetica Neue Medium", sans-serif;
-	font-weight: 400;
-	color: white;
+    font-family: "Figtree Medium", "Helvetica Neue Medium", sans-serif;
+    font-weight: 400;
+    color: white;
     text-shadow:
      -1px -1px 0 #EB660A,
      1px -1px 0 #EB660A,
@@ -268,9 +268,9 @@ body {
      1px 1px 0 #EB660A;  
 }
 #homeSearch {
-	height: auto;
+    height: auto;
     padding: 0;
-	position: relative;
+    position: relative;
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -278,34 +278,34 @@ body {
     background-color: transparent;
 }
 #homeRow2 {
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 #homeCol2 {
-	padding-right: 0;
+    padding-right: 0;
     padding-left: 0;
-	flex: 0 0 41.66666667%;
+    flex: 0 0 41.66666667%;
     max-width: 41.66666667%;
-	position: relative;
+    position: relative;
     width: 100%;
 }
 #homeExploreTab {
-	margin-top: 0;
-	max-width: 440px;
-	box-shadow: none;
+    margin-top: 0;
+    max-width: 440px;
+    box-shadow: none;
     background: #fff;
     border-radius: 8px;
-	padding: 0;
+    padding: 0;
     margin: 0;
-	position: relative;
-	background-color: #e3e3e3;
-	cursor: no-drop;
+    position: relative;
+    background-color: #e3e3e3;
+    cursor: no-drop;
 }
 #homeExploreTabInside {
-	border: 1px solid #cccccc;
+    border: 1px solid #cccccc;
     margin-bottom: 0;
-	width: 100%;
+    width: 100%;
     background: #ffffff;
     padding: 0 18px;
     box-sizing: border-box;
@@ -315,76 +315,76 @@ body {
     flex-direction: row;
     text-align: left;
     justify-content: flex-start;
-	background-color: #e3e3e3;
-	cursor: no-drop;
+    background-color: #e3e3e3;
+    cursor: no-drop;
 }
 #homeExploreTabInside button {
-	cursor: pointer;
-	position: relative;
+    cursor: pointer;
+    position: relative;
     top: 18px;
     width: unset;
     padding-left: unset;
     padding-right: 12px;
-	appearance: none;
+    appearance: none;
     background: none;
     border: 0;
     margin: 0;
-	height: 100%;
-	text-transform: none;
-	overflow: visible;
-	border-radius: 0;
+    height: 100%;
+    text-transform: none;
+    overflow: visible;
+    border-radius: 0;
     vertical-align: middle;
-	background-color: #e3e3e3;
-	cursor: no-drop;
+    background-color: #e3e3e3;
+    cursor: no-drop;
 }
 #homeExploreTabInside svg {
-	color: #191919;
-	height: auto;
-	max-height: 20px;
-	stroke-width: 1.6;
-	width: 20px;
-	overflow: hidden;
+    color: #191919;
+    height: auto;
+    max-height: 20px;
+    stroke-width: 1.6;
+    width: 20px;
+    overflow: hidden;
     vertical-align: middle;
-	background-color: #e3e3e3;
-	cursor: no-drop;
+    background-color: #e3e3e3;
+    cursor: no-drop;
 }
 #homeExploreTabInside input[type=text] {
     float: right;
-	width: 100%;
-	padding: 6px;
-	margin-top: 8px;
-	margin-bottom: 9px;
-	margin-right: 16px;
+    width: 100%;
+    padding: 6px;
+    margin-top: 8px;
+    margin-bottom: 9px;
+    margin-right: 16px;
     border: none;
-	font-size: 17px;
-	font: inherit;
-	color: rgba(38, 38, 39, 1);
-	height: 44px;
-	background-color: #e3e3e3;
-	cursor: no-drop;
+    font-size: 17px;
+    font: inherit;
+    color: rgba(38, 38, 39, 1);
+    height: 44px;
+    background-color: #e3e3e3;
+    cursor: no-drop;
 }
 #homeFooter {
-	cursor: pointer;
+    cursor: pointer;
     display: block;
     position: absolute;
     bottom: -50px;
-	transition: opacity .5s;
+    transition: opacity .5s;
     margin: 0;
 }
 #homeFooter a {
-	display: block;
+    display: block;
     color: #fff;
     margin-bottom: 1px;
     text-decoration: none;
 }
 #homeFooter span {
-	font-size: 26px;
-	display: inline-block
+    font-size: 26px;
+    display: inline-block
 }
 #homeFooter img {
-	margin-right: 0;
-	margin-left: 0;
-	display: inline;
+    margin-right: 0;
+    margin-left: 0;
+    display: inline;
     height: 30px;
     width: auto;
     font-size: inherit;
@@ -392,72 +392,72 @@ body {
     position: relative;
 }
 #homeFooter p {
-	color: #ffffff;
+    color: #ffffff;
     margin-bottom: 1px;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	font-size: 14px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 14px;
     margin-top: 2px;
     font-family: "Figtree Medium", "Helvetica Neue Medium", sans-serif;
 }
 #homeFooterSmallP {
-	font-size: 11px !important;
-	margin-top: 5px !important;
+    font-size: 11px !important;
+    margin-top: 5px !important;
 }
 
 .contentContainer {
-	padding: 40px 40px 20px;
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	max-width: 1120px;
+    padding: 40px 40px 20px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1120px;
 }
 .contentTitle {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: flex-end;
-	margin-bottom: 32px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
 }
 .contentTitle h2 {
-	padding-top: 32px;
-	flex: 1;
-	display: block;
+    padding-top: 32px;
+    flex: 1;
+    display: block;
     width: 100%;
     margin: 0;
-	position: relative;
+    position: relative;
     font-size: 40px;
     line-height: 1.2;
     font-family: "Figtree Medium", "Helvetica Neue Medium", sans-serif;
     font-weight: 400;
 }
 .contentTitle h2::before {
-	width: 54px;
-	background: #bd2333;
+    width: 54px;
+    background: #bd2333;
     position: absolute;
     content: '';
     display: block;
     height: 4px;
     top: 0;
     left: 0;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 .contentButtons {
-	width: 150px;
+    width: 150px;
     text-align: right;
     white-space: nowrap;
 }
 .contentButtons button {
-	font-size: 22px;
-	cursor: pointer;
-	min-width: auto;
+    font-size: 22px;
+    cursor: pointer;
+    min-width: auto;
     padding: 6px 10px;
-	background: #fff;
+    background: #fff;
     color: #4d4d4d;
     font-family: "Figtree Medium", "Helvetica Neue Medium", sans-serif;
-	border-radius: 4px;
+    border-radius: 4px;
     line-height: 1.3;
-	text-decoration: none;
-	margin-left: 24px;
+    text-decoration: none;
+    margin-left: 24px;
     border: solid 1px #a1a1a1;
     width: 33px;
     height: 33px;
@@ -467,31 +467,31 @@ body {
     vertical-align: middle;
 }	
 .contentButtons button:hover {
-	background: #f7f7f7;
-	color: #4d4d4d;
+    background: #f7f7f7;
+    color: #4d4d4d;
 }
 .contentButtons span {
-	position: relative;
+    position: relative;
     overflow: hidden;
     top: -1px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: "Font Awesome Light";
-	font-weight: 300;
-	font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Font Awesome Light";
+    font-weight: 300;
+    font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
 }
 .contentButtonLeft span::before {
-	content: "\f104";
+    content: "\f104";
 }
 .contentButtonRight span::before {
-	content: "\f105";
+    content: "\f105";
 }
 .contentViewBox {
-	margin: 0 0 0 -8px;
+    margin: 0 0 0 -8px;
     width: 1136px;
     position: relative;
     z-index: 1;
@@ -501,7 +501,7 @@ body {
     transition: all 0.25s ease 0s;
     width: 2651px;
     position: relative;
-	min-height: 500px;
+    min-height: 500px;
 }
 .contentCardContainer {
     width: 362.667px;
@@ -523,7 +523,7 @@ body {
 .contentCardImage {
     width: 100%;
     position: relative;
-	display: flex;
+    display: flex;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -537,7 +537,7 @@ body {
     padding: 16px 16px 16px 16px;
     position: relative;
     font-size: 14px;
-	user-select: none;
+    user-select: none;
 }
 .contentCardDescription h3 {
     margin-bottom: 0;
@@ -562,8 +562,8 @@ body {
     line-height: normal;
     max-width: fit-content;
     padding-bottom: 3px;
-	position: relative;
-	margin-top: 6px;
+    position: relative;
+    margin-top: 6px;
 }
 .contentCard a {
     position: absolute;
@@ -577,25 +577,25 @@ body {
     background-color: transparent;
 }
 .contentCardDescription.contentCardDescriptionAbout {
-	height: 131px;
+    height: 131px;
 }
 .contentCardDescription .contentCardAbout {	
-	box-sizing: border-box;
-	color: rgb(117, 117, 117);
-	font-family: "Figtree Regular", "Helvetica Neue Light", sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	margin-block-start: 0;
-	margin-block-end: 0;
-	text-align: left;
-	text-size-adjust: 100%;
-	margin-top: 8px;
+    box-sizing: border-box;
+    color: rgb(117, 117, 117);
+    font-family: "Figtree Regular", "Helvetica Neue Light", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: left;
+    text-size-adjust: 100%;
+    margin-top: 8px;
 }
 .contentCardDiscover {
     border-top: none;
     font-size: 14px;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     display: flex;
 }
 .contentCardDiscover a {
@@ -636,19 +636,19 @@ body {
     font-size: 20px;
     line-height: 1.2;
     border-radius: 5px;
-	user-select: none;
+    user-select: none;
 }
 .contentInspirationContainer {
     text-align: unset;
     padding: 30px 30px;
-	position: relative;
+    position: relative;
     height: 100%;
     color: #ffffff;
     z-index: 4;
     width: 100%;
     height: 100%;
     top: 0;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 .contentInspirationContainer a {
     background: #bd2333;
@@ -691,23 +691,23 @@ body {
 .contentHeadline {
     position: absolute;
     width: 100%;
-	box-sizing: border-box;
-	text-size-adjust: 100%;
-	padding: 0 60px 30px 0;
-	bottom: 0;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    padding: 0 60px 30px 0;
+    bottom: 0;
 }
 .contentHeadline h3 {
     font-size: 22px;
     font-family: "Figtree SemiBold", "Helvetica Neue Medium", sans-serif;
-	color: #ffffff;
+    color: #ffffff;
     line-height: 1.5;
     margin-bottom: 16px;
-	font-weight: 400;
+    font-weight: 400;
     margin-top: 0;
     box-sizing: border-box;
     text-decoration: none;
     background-color: transparent;
-	display: inline-block;
+    display: inline-block;
 }
 .contentOverlay {
     mask-image: linear-gradient(to top, black 25%, transparent 75%);
@@ -755,7 +755,7 @@ body {
 .contentWrapper a:hover {
     border: solid 2px #bd2333;
     background: #f7f7f7;
-	outline: 0;
+    outline: 0;
 }
 
 .aboutContainer {
@@ -776,7 +776,7 @@ body {
     padding-left: 16px;
     flex: 0 0 100%;
     max-width: 100%;
-	position: relative;
+    position: relative;
     width: 100%;
 }
 .aboutCardBorder {
@@ -801,7 +801,7 @@ body {
     box-sizing: border-box;
 }
 .aboutInnerContainer {
-	border: solid 4px #bd2333;
+    border: solid 4px #bd2333;
     height: 352px;
     padding-left: 412px;
     padding-right: 164px;
@@ -812,7 +812,7 @@ body {
 .aboutInner {
     display: table-cell;
     vertical-align: middle;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 .aboutInner h3 {
     font-size: 40px;
@@ -882,7 +882,7 @@ body {
     width: 160px;
     box-sizing: border-box;
     user-select: none;
-	text-align: center;
+    text-align: center;
 }
 .partnersContainer img {
     background-position: center center;
@@ -902,8 +902,8 @@ body {
     font-size: 14px;
     line-height: 1.29;
     box-sizing: border-box;
-	user-select: none;
-	text-align: center;
+    user-select: none;
+    text-align: center;
 }
 .partnersContainer h5 {
     font-size: 20px;
@@ -912,7 +912,7 @@ body {
     font-family: "Figtree Medium", "Helvetica Neue Medium", sans-serif;
     font-weight: 400;
     box-sizing: border-box;
-	text-align: center;
+    text-align: center;
 }
 .partnersContainer a {
     position: absolute;
@@ -933,7 +933,7 @@ body {
 
 /* Start of priorities */
 .show {
-	animation: fadeIn .5s;
+    animation: fadeIn .5s;
     opacity: 1;
     z-index: 2201;
 }
