@@ -11,7 +11,10 @@ document.addEventListener("wheel", whenScroll);
 var menubar = document.getElementById("menubarid");
 function whenClick(event) {
 	if (!event.target.matches(".killoutside")) {
-		if (menubar.classList.contains("show")) {menubar.classList.remove("show");}
+		if (menubar.classList.contains("show")) {
+			menubar.classList.remove("show");
+			noscroll = false;
+		}
 	}
 }
 document.addEventListener("click", whenClick);
